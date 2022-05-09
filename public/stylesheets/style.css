@@ -1,8 +1,27 @@
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthebossmagazine.com%2Fwp-content%2Fuploads%2F2015%2F08%2FDrones-in-Mining-3.jpg&f=1&nofb=1");
+  background-size: cover;
+  background-position: 0,0;
 }
 
 a {
   color: #00b7ff;
+}
+
+.btnDronEdit{
+  margin-bottom: 10px;
+}
+.dron{
+  width: 400px;
+}
+#createForm, #editForm{
+  width: 600px;
+}
+
+.body-container{
+  background-color: rgba(255, 255, 255, 0.60);
+  border-radius: 25px;
+  padding: 25px 25px;
 }

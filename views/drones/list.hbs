@@ -1,1 +1,22 @@
-<h2>Available drones</h2>
+<div class="headerDrones">
+  <h2>Listado de drones</h2>
+
+</div>
+<div class="dronesInfo mt-5">
+  <div class="d-flex flex-row align-items-center flex-wrap gap-5">
+    {{#each drones}}
+      <div class="dron d-flex flex-column align-items-center">
+        <h3>{{this.name}}</h3>
+        <p>Hélices: {{this.propellers}}</p>
+        <p>Velocidad máxima: {{this.maxSpeed}}</p>
+        <a
+          href="/drones/{{this._id}}/edit"
+          class="btn btn-warning btnDronEdit"
+        >EDITAR</a>
+        <form action="/drones/{{this._id}}/delete" method="POST">
+          <button type="submit" class="btn btn-danger">BORRAR</button>
+        </form>
+      </div>
+    {{/each}}
+  </div>
+</div>
